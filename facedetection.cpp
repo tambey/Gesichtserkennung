@@ -174,7 +174,7 @@ void detectAndDisplay( Mat frame ) {
             /* Save detected face */
             Mat faceROI = frame_gray( faces[i] );	/* Region of interest */
             stringstream g;
-            g << "/home/hacker/data/Fertige Projekte/facedetect_console/Photos/image" << i << ".jpg";
+            g << "/home/username/data/facedetect_console/Photos/image" << i << ".jpg";
             imwrite(g.str(), faceROI);
 
             std::vector<Rect> eyes;
