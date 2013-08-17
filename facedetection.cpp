@@ -8,12 +8,12 @@
 #include <iostream>
 #include <stdio.h>
 
-/*/ bind the OpenCV-libraries to use them*/
+/* bind the OpenCV-libraries to use them */
 #include "opencv2/objdetect/objdetect.hpp"
 #include "opencv2/highgui/highgui.hpp"
 #include "opencv2/imgproc/imgproc.hpp"
 
-/* bind the libcurl to SendMail/*
+/* bind the libcurl to SendMail */
 #include <curl/curl.h>
 
 
