@@ -1,4 +1,4 @@
 Gesichtserkennung
 =================
 
-Entwicklung eins Videoüberwachungssystem mittels Algorithmen der OpenCv
+Entwicklung eins Videoüberwachungssystem mittels Algorithmen der OpenCV-Bibliothek
