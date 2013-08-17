@@ -9,4 +9,4 @@ About
 
 This project is an example of using [r2h]:
 
-[README](your-project-name/blob/master/your-subfolder/README.md)
+[README](http://opencv.willowgarage.com/wiki/)
