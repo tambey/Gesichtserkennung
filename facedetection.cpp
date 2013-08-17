@@ -9,9 +9,10 @@
 #include <stdio.h>
 
 /* bind the OpenCV-libraries to use them */
-#include "opencv2/objdetect/objdetect.hpp"
-#include "opencv2/highgui/highgui.hpp"
-#include "opencv2/imgproc/imgproc.hpp"
+
+#include "opencv2/objdetect/objdetect.hpp"		/* For detect poeples and faces*/
+#include "opencv2/highgui/highgui.hpp"			/* Start, Save Video Stream */
+#include "opencv2/imgproc/imgproc.hpp"			/* Image Processing */
 
 /* bind the libcurl to SendMail */
 #include <curl/curl.h>
@@ -43,13 +44,13 @@ RNG rng(12345);		/* Line color of rectangle*/
 /*
  * This is the list of basic details you need to tweak to get things right.
 */
-#define USERNAME "sender@example.org"
-#define PASSWORD "MailSenderPassword"
+#define USERNAME "tamerbeylik@live.de"
+#define PASSWORD "cicekcikiz01"
 #define SMTPSERVER "smtp.live.com"
 #define SMTPPORT ":25" /* it is a colon+port string, but you can set it
                            to "" to use the default port */
-#define RECIPIENT "<MailRecopient>"
-#define MAILFROM "<MailRecopient>"
+#define RECIPIENT "<tamerbeylik@live.de>"
+#define MAILFROM "<tambey-01@windowslive.com>"
 
 #define MULTI_PERFORM_HANG_TIMEOUT 60 * 1000
 
@@ -174,7 +175,7 @@ void detectAndDisplay( Mat frame ) {
             /* Save detected face */
             Mat faceROI = frame_gray( faces[i] );	/* Region of interest */
             stringstream g;
-            g << "/home/username/data/facedetect_console/Photos/image" << i << ".jpg";
+            g << "/home/hacker/data/Fertige Projekte/facedetect_console/Photos/image" << i << ".jpg";
             imwrite(g.str(), faceROI);
 
             std::vector<Rect> eyes;
