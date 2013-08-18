@@ -31,7 +31,7 @@ CascadeClassifier eyeglasses_cascade;
 CascadeClassifier mouth_cascade;
 
 /* Name of GUI */
-string window_name = "Capture - Face detection";
+string window_name = "Video Surveillance";
 
 /* The Random Number generator class (RNG) and how to get a random number from a uniform distribution */
 RNG rng(12345);		/* Line color of rectangle*/
