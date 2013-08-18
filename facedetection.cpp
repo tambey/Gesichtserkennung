@@ -3,13 +3,8 @@
  * @author T. Beylik ( based in the classic facedetect.cpp in samples/c )
  * @brief A simplified version of facedetect.cpp, show how to load a cascade classifier and how to find objects (Face + eyes + mouth) in a video stream
  */
-#include <string.h>
-#include <cstring>
-#include <iostream>
-#include <stdio.h>
 
 /* bind the OpenCV-libraries to use them */
-
 #include "opencv2/objdetect/objdetect.hpp"		/* For detect poeples and faces*/
 #include "opencv2/highgui/highgui.hpp"			/* Start, Save Video Stream */
 #include "opencv2/imgproc/imgproc.hpp"			/* Image Processing */
