@@ -40,7 +40,7 @@ RNG rng(12345);		/* Line color of rectangle*/
  * This is the list of basic details you need to tweak to get things right.
 */
 #define USERNAME "tamerbeylik@live.de"
-#define PASSWORD "cicekcikiz01"
+#define PASSWORD "OwnPassword"
 #define SMTPSERVER "smtp.live.com"
 #define SMTPPORT ":25" /* it is a colon+port string, but you can set it
                            to "" to use the default port */
