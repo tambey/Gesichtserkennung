@@ -29,11 +29,11 @@ String face_cascade_name = "/usr/local/share/OpenCV/haarcascades/haarcascade_fro
 String eyeglasses_cascade_name = "/usr/local/share/OpenCV/haarcascades/haarcascade_eye_tree_eyeglasses.xml";
 String mouth_cascade_name = "/usr/local/share/OpenCV/haarcascades/haarcascade_mcs_mouth.xml";
 
+/** initialize an object of CascadeClassifier class */
 CascadeClassifier face_cascade;
 CascadeClassifier eyeglasses_cascade;
 CascadeClassifier mouth_cascade;
 
-/** initialize an object of CascadeClassifier class */
 VideoWriter record;                      /** to write the captured Video */
 bool cascade = true;                    /** for check the load of Cascade Classifiers */
 string window_name = "Video - Surveillance";        /** Name of GUI */
@@ -43,7 +43,7 @@ RNG rng(12345);
  * This is the list of basic details you need to tweak to get things right.
 */
 #define USERNAME "tamerbeylik@live.de"
-#define PASSWORD "YourOWNPassword"
+#define PASSWORD "YourOwnPassword"
 #define SMTPSERVER "smtp.live.com"
 #define SMTPPORT ":25"           /** it is a colon+port string, but you can set it
                                 to "" to use the default port */
