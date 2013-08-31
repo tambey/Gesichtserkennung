@@ -58,7 +58,7 @@ void detectAndDisplay( Mat frame ) {
  }
  ```
 
-Speichern
+Speichern eines Bildes
 =========
 ```objective-c
 Mat faceROI = frame_gray( faces[i] );
