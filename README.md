@@ -19,9 +19,12 @@ Um das Programm zu benutzen muss [OpenCV-Bibliothek](http://opencv.org/downloads
  
 
 Haar Klassifikator Laden
+========================
 String face_cascade_name = "/usr/local/share/OpenCV/haarcascades/haarcascade_frontalface_alt2.xml";
 
 Kamera starten
+==============
+
 VideoCapture capture(-1); 
      if( !capture.isOpened() ){ 
              cout << "\nCamera couldn't be opened!" << endl; return -1; 
@@ -29,6 +32,7 @@ VideoCapture capture(-1);
      capture >> frame; 
 
 Gesichtserkennung
+=================
 void detectAndDisplay( Mat frame ) {
     std::vector<Rect> faces;		
     Mat frame_gray;		
@@ -50,13 +54,12 @@ void detectAndDisplay( Mat frame ) {
  }
 
 Speichern
+=========
+
 Mat faceROI = frame_gray( faces[i] );
 stringstream g;
 g << "/home/hacker/data/Fertige Projekte/facedetect_console/Photos/image" << i << ".jpg";
 imwrite(g.str(), faceROI);
-
-
-
 
 
 Projektstatus
