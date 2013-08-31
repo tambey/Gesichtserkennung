@@ -20,16 +20,19 @@ Um das Programm zu benutzen muss [OpenCV-Bibliothek](http://opencv.org/downloads
 
 Haar Klassifikator Laden
 ========================
+```objective-c
 String face_cascade_name = "/usr/local/share/OpenCV/haarcascades/haarcascade_frontalface_alt2.xml";
+```
 
 Kamera starten
 ==============
-
+```objective-c
 VideoCapture capture(-1); 
      if( !capture.isOpened() ){ 
              cout << "\nCamera couldn't be opened!" << endl; return -1; 
       }
      capture >> frame; 
+```
 
 Gesichtserkennung
 =================
