@@ -33,7 +33,7 @@ VideoCapture capture(-1);
 
 Gesichtserkennung
 =================
-```cplusplus
+```objective-c
 void detectAndDisplay( Mat frame ) {
     std::vector<Rect> faces;		
     Mat frame_gray;		
@@ -57,12 +57,13 @@ void detectAndDisplay( Mat frame ) {
 
 Speichern
 =========
-
+```objective-c
 Mat faceROI = frame_gray( faces[i] );
 
 stringstream g;
 g << "/home/hacker/data/Fertige Projekte/facedetect_console/Photos/image" << i << ".jpg";
 imwrite(g.str(), faceROI);
+```
 
 
 Projektstatus
