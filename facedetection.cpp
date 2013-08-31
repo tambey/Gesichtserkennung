@@ -42,13 +42,13 @@ RNG rng(12345);
 /**
  * This is the list of basic details you need to tweak to get things right.
 */
-#define USERNAME "tamerbeylik@live.de"
+#define USERNAME "YourOwnEmailadresse@live.de"
 #define PASSWORD "YourOwnPassword"
 #define SMTPSERVER "smtp.live.com"
 #define SMTPPORT ":25"           /** it is a colon+port string, but you can set it
                                 to "" to use the default port */
-#define RECIPIENT "<tamerbeylik@live.de>"
-#define MAILFROM "<tambey-01@windowslive.com>"
+#define RECIPIENT "<YourOwnEmailadresse@live.de>"
+#define MAILFROM "<MailFrom@live.de>"
 
 #define MULTI_PERFORM_HANG_TIMEOUT 60 * 1000
 
